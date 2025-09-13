@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-export function PostFilter({ field, value, onChange }) {
+export function PostSorting({ field, value, onChange }) {
   return (
     <div>
       <label htmlFor={`filter-${field}`}>{field}: </label>
@@ -15,7 +15,7 @@ export function PostFilter({ field, value, onChange }) {
   )
 }
 
-PostFilter.propTypes = {
+PostSorting.propTypes = {
   field: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
